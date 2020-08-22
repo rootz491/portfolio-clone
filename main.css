@@ -1,0 +1,196 @@
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    scroll-behavior: smooth;
+}
+
+.container {
+    height: auto;
+    width: 100%;
+}
+
+section {
+    margin-top: 4em;
+    min-height: 100vh;
+}
+
+/*   header   */
+
+.header {
+    position: fixed;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 70px;
+    background: #06D6A0;
+    width: 100%;
+}
+
+.header h1 {
+    color: #ffffff;
+    letter-spacing: 5px;
+    cursor: pointer;
+}
+
+.header a {
+    padding: 7px 15px;
+    color: #ffffff;
+    letter-spacing: 1.2px;
+    font-size: 17px;
+}
+
+.header a#headerButton {
+    background: orange;
+    padding: 10px 13px;
+    border-radius: 10px;
+}
+
+/*   main-content   */
+
+
+section.main {
+    width: 100%;
+
+    display: flex;
+}
+
+.mainTextLeft {
+    width: 50%;
+    padding: 4em;
+}
+
+.textArea1 {
+    padding: 1.5em 0;
+    font-size: 30px;
+    line-height: 60px;
+    margin-top: 4em;
+}
+
+.textArea2 {
+    font-size: 18px;
+    margin-bottom: 2em;
+}
+
+.textArea3 a {
+    font-size: 22px;
+    color: rgba(0, 0, 0,0.8);
+    background: #ffffff;
+    border: 3px solid orange;
+    padding: 10px 18px;
+    border-radius: 5px;
+}
+
+.mainImage {
+    width: 50%;
+    padding: 6em 2em;
+}
+
+.img1 {
+    margin: auto;
+    width: 750px;
+}
+
+.img1 img {
+    width: 100%;
+}
+
+
+/*   section main responsive   */
+
+@media screen and (max-width: 1350px) {
+    .img1 {
+        width: 600px;
+    }
+    
+}
+
+@media screen and (max-width: 1200px) {
+    .textArea1 {
+        font-size: 24px;
+        margin-top: 3.5em;
+    }
+    .img1 {
+        width: 500px;
+    }
+    .mainTextLeft {
+        padding: 2em;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    section.main {
+        flex-direction: column;
+        align-items: center;
+    }
+    .mainTextLeft {
+        width: 100%;
+    }
+    .textArea1 {
+        margin: 0;
+    }
+    .mainImage {
+        width: 100%;
+        padding: 2em;
+    }
+    .img1 {
+        width: 700px;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    section {
+        margin-top: 6em;
+    }
+    .img1 {
+        width: 520px;
+    }
+    .mainTextLeft {
+        padding: 1.5em 3em;
+    }
+    .header {
+        flex-direction: column;
+        gap: 1em;
+    }
+    #headerButton {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    section {
+        margin-top: 8em;
+    }
+    .img1 {
+        width: 350px;
+    }
+    .mainImage {
+        padding: 1em 0;
+    }
+    .textArea1 {
+        line-height: 40px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .mainTextLeft {
+        padding: 2em .3em;
+    }
+    .textArea1 {
+        font-size: 18px;
+        line-height: 30px;
+    }
+}
+
+/*  section #1 -> WORK  */
+
+.sectionOne {
+    padding: 6em;
+    outline: 1px solid black;
+}
+
+.sectionOneHeading {
+
+}
